@@ -25,3 +25,12 @@ Git Version 2.x:
 
 + git add -A is equivalent to git add --all
 + git add -u is equivalent to git add --update
+
+So from Charles instructions above, after testing my proposed understanding would be as follow:
+
+```
+# For the next commit
+git add .   # add to index only files created/modified and not those deleted
+git add -u  # add to index only files deleted/modified and not those created
+git add -A  # do both operation at once, add to index all files
+```
